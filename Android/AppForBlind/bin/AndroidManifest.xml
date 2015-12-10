@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appforblind"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/f"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.appforblind.IntroActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.appforblind.MainActivity"
+                  android:theme = "@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.appforblind.DetectActivity"
+                  android:theme = "@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.appforblind.ContactActivity"
+            	  android:windowSoftInputMode="stateAlwaysHidden"
+                  android:theme = "@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.appforblind.PrecautionActivity"
+                  android:theme = "@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.appforblind.HelpActivity"
+                  android:theme = "@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.appforblind.Popup"
+                  android:theme="@android:style/Theme.Translucent" ></activity>
+        
+    </application>
+    
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.BLUETOOTH" /> 
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    
+     <uses-permission android:name="android.permission.VIBRATE" /> 
+    
+    
+      
+    
+
+</manifest>
